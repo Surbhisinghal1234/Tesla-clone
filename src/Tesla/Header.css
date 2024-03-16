@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  padding: 0 2rem;
+}
+header ul {
+  list-style: none;
+  display: flex;
+}
+header ul a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  display: block;
+  padding: 8px;
+  margin: 8px;
+}
+.sidebar {
+  position: fixed;
+  height: 100vh;
+  width: 250px;
+  padding: 1rem;
+  background-color: #fff;
+  color: #000;
+  /* right: -250px; */
+  flex-direction: column;
+  display: flex;
+  z-index: 99;
+  list-style: none;
+  transition: all 0.5s ease-in-out;
+}
+.sidebar a {
+  text-decoration: none;
+  display: block;
+  padding: 8px 16px;
+  margin: 8px;
+  color: black;
+  font-weight: 700;
+}
+.sideBar span i {
+  display: block;
+  text-align: right;
+  padding: 20px 20px 0 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 570px) {
+  .header ul {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .header {
+    align-items: start;
+    height: unset;
+    position: unset;
+  }
+  .section .callToAction .rightBtn {
+    margin-left: 0 !important;
+    margin-top: 1rem;
+  }
+  .section .callToAction .leftBtn {
+    margin-right: 0 !important;
+  }
+  .section {
+    height: unset !important;
+    padding: 5rem 0 !important;
+  }
+  .section .modelsName {
+    padding-top: 1rem !important;
+  }
+  .section .callToAction {
+    padding-bottom: 1rem !important;
+  }
+}

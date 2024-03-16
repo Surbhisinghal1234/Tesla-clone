@@ -1,0 +1,93 @@
+.section {
+  height: 100vh;
+  /* background-image: url("./teslaImages/model-3.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.section .modelsName {
+  padding-top: 5rem;
+}
+.section .modelsName h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.section .callToAction {
+  padding-bottom: 3rem;
+  text-align: center;
+}
+.section .callToAction a {
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  width: 250px;
+  padding: 8px 20px;
+  text-align: center;
+}
+/* .section .callToAction .leftBtn {
+  background-color: rgba(23, 26, 32, 0.8);
+  color: #fff;
+  margin-right: 10px;
+}
+.section .callToAction .leftBtn:hover {
+    background-color: #c00520;
+    color: #fff;
+  } */
+.section .callToAction .leftBtn {
+  background-image: linear-gradient(to bottom, transparent 50%, #c00520 50%);
+  background-size: 100% 200%;
+  background-position: 0 0;
+  transition: background-position 0.5s ease-in-out;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  position: relative;
+  background-color: rgba(23, 26, 32, 0.8);
+  margin-right: 10px;
+}
+
+.section .callToAction .leftBtn:hover {
+  background-position: 0 100%;
+  color: #fff;
+}
+/* .section .callToAction .rightBtn {
+  background-color: #fff;
+  color: #000;
+  margin-left: 10px;
+}
+.section .callToAction .rightBtn:hover {
+  background-color: #c00520;
+  color: #fff;
+} */
+/* ************************************ */
+
+.section .callToAction .rightBtn {
+  background-image: linear-gradient(to bottom, transparent 50%, #c00520 50%);
+  background-size: 100% 200%;
+  background-position: 0 0;
+  transition: background-position 0.5s ease-in-out;
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  position: relative;
+  background-color: #fff;
+  margin-left: 10px;
+}
+
+.section .callToAction .rightBtn:hover {
+  background-image: linear-gradient(to bottom, transparent 50%, #c00520 50%);
+  background-position: 0 -100%;
+  color: #fff;
+}
+
+.section .callToAction img {
+  width: 40px;
+  margin-top: 10px;
+}
