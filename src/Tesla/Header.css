@@ -29,12 +29,17 @@ header ul a {
 }
 .sidebar {
   position: fixed;
-  height: 100vh;
-  width: 250px;
-  padding: 1rem;
-  background-color: #fff;
+  height: 500px;
+  margin-top: 3rem;
+  width: 220px;
+  border-radius: 10px 0 0 10px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 128, 0, 0.183),
+    rgba(255, 0, 0, 0.135),
+    rgba(0, 0, 0, 0.493)
+  );
   color: #000;
-  /* right: -250px; */
   flex-direction: column;
   display: flex;
   z-index: 99;
@@ -49,31 +54,31 @@ header ul a {
   color: black;
   font-weight: 700;
 }
-.sideBar span i {
+.sidebar span i {
   display: block;
   text-align: right;
   padding: 20px 20px 0 0;
 }
 
 @media screen and (min-width: 320px) and (max-width: 570px) {
-  .header ul {
+  header ul {
     display: flex;
     flex-direction: column !important;
   }
-  .header {
+  header {
     align-items: start;
     height: unset;
     position: unset;
   }
   .section .callToAction .rightBtn {
     margin-left: 0 !important;
-    margin-top: 1rem;
+    margin-top: 1rem !important;
   }
   .section .callToAction .leftBtn {
     margin-right: 0 !important;
   }
   .section {
-    height: unset !important;
+    height: unset;
     padding: 5rem 0 !important;
   }
   .section .modelsName {
